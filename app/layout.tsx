@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next';
 import { Manrope } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.',
+  title: 'Ecurs - nowoczesna edukacja',
+  description: 'Zacznij tworzyć interaktywne kursy online z Ecurs.',
 };
 
 export const viewport: Viewport = {
