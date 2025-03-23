@@ -4,9 +4,9 @@ export default function PricingSection() {
   // Statyczne informacje o ofertach
   const plans = [
     {
-      name: 'Bezpłatny dostęp dla uczniów',
+      name: 'Bezpłatny dostęp dla Twoich uczniów',
       price: '0 zł', // Cena bezpłatna
-      description: 'Zapewnij uczniom darmowy dostęp do platformy Ecurs, aby mogli korzystać z interaktywnych kursów.',
+      description: 'Zapewnij swoim uczniom darmowy dostęp do platformy Ecurs, aby mogli korzystać z interaktywnych kursów.',
       features: [
         'Korzystanie z kursów na platformie',
         'Dostęp z dowolnego urządzenia',
