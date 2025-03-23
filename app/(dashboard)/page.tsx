@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import PricingSection from './__components/page';
+import ContactButton from './__components/contact';
 
 export default function HomePage() {
   return (
@@ -80,6 +81,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center">Wiele sposobów dostępu</h2>
           <PricingSection />
+        </div>
+      </section>
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 text-center">Skontaktuj się z nami</h2>
+          <p className="mt-3 text-lg text-gray-500 text-center">
+        Masz pytania? Chętnie pomożemy! Skontaktuj się z nami, aby dowiedzieć się więcej o Ecurs.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <ContactButton />
+          </div>
         </div>
       </section>
     </main>
