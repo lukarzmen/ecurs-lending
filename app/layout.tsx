@@ -25,8 +25,8 @@ export default function RootLayout({
       lang="en"
       className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
     >
-       <ToastProvider />
       <body className="min-h-[100dvh] bg-gray-50">
+        <ToastProvider />
         {children}
       </body>
     </html>
