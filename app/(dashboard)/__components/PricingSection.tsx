@@ -65,7 +65,7 @@ function PricingCard({
   features,
 }: {
   name: string;
-  price: string | null;
+  price: string;
   pricingPeriod: string | null;
   description: string;
   features: string[];
