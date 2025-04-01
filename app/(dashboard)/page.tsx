@@ -19,7 +19,7 @@ export default function HomePage() {
                 </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white rounded-full text-lg px-8 py-4 inline-flex items-center justify-center">
-                  <a href="https://ecurs-lms.vercel.app/">
+                  <a href="https://platforma.ecurs.pl/">
                     Zobacz demo
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
