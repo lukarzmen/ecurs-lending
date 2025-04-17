@@ -14,7 +14,7 @@ export default function WishlistComponent() {
     const name = formData.get('name');
     const phone = formData.get('phone');
     try {
-      const response = await fetch('https://hook.eu2.make.com/488d0ym8niojopxg72obje68aj5jt6tq', {
+      const response = await fetch('https://ecurs.app.n8n.cloud/webhook/38bc8e50-3efc-4305-b951-145b7f6971bb', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
