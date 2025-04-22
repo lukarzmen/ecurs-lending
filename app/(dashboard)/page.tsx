@@ -63,19 +63,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+
+      <section className="py-16 bg-gray-50"> {/* Changed background for visual separation */}
+        <div className="max-w-5xl mx-auto px-8 sm:px-10 lg:px-12 text-center"> {/* Increased max-width and padding */}
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Rozwijaj swoją wizję edukacyjną z Ecurs</h2>
           <p className="mt-3 text-lg text-gray-500">
-            Skorzystaj z platformy, która ułatwi Ci tworzenie kursów i zarządzanie nimi. Z Ecurs możesz skupić się na tym co chcesz przekazać, my zajmiemy się resztą.
-          </p>
-          <p className="mt-3 text-lg text-gray-500">
-            Dzięki modułowi sprzedaży możesz udostępniać swoje materiały, aby dotrzeć do większej liczby uczniów i zwiększyć swoje dochody.
+        Skorzystaj z platformy, która ułatwi Ci tworzenie kursów i zarządzanie nimi. Z Ecurs możesz skupić się na tym co chcesz przekazać.
           </p>
         </div>
       </section>
+      {/* Section for AI Content Generation - Updated Layout */}
+      <section className="py-16 lg:py-24 bg-white"> {/* Increased padding */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center"> {/* Use grid for layout */}
+            {/* Image Column (Left on large screens) */}
+            <div className="flex justify-center mb-10 lg:mb-0"> {/* Center image, add margin bottom for mobile */}
+              <img
+                src="/generate_content.gif"
+                alt="Generowanie treści AI w Ecurs"
+                className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
+                /* Consider adding width/height attributes for performance if known */
+                /* width={...} height={...} */
+              />
+            </div>
+            {/* Text Content Column (Right on large screens) */}
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"> {/* Adjusted text size and alignment */}
+                Twórz treści ze wsparciem sztucznej inteligencji
+              </h2>
+              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left"> {/* Adjusted text color and alignment */}
+                Wykorzystaj moc AI do szybkiego tworzenia interesujących materiałów edukacyjnych i wspierania ucznia w nauce, oszczędzając swój cenny czas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section className="bg-gray-50 pt-16">
+      {/* New Section for Interactive Content */}
+      <section className="py-16 lg:py-24 bg-gray-50"> {/* Increased padding */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center"> {/* Use grid for layout */}
+            {/* Text Content Column */}
+            <div className="mb-10 lg:mb-0"> {/* Add margin bottom for mobile */}
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"> {/* Adjusted text size and alignment */}
+                Twórz interaktywne treści
+              </h2>
+              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left"> {/* Adjusted text color and alignment */}
+                Angażuj uczniów za pomocą różnorodnych interaktywnych elementów, takich jak quizy, zadania typu "dopasuj elementy", fiszki i wiele innych, aby nauka była ciekawsza.
+              </p>
+            </div>
+            {/* Image Column */}
+            <div className="flex justify-center"> {/* Center image within its column */}
+              <img
+                src="/interactive_content.gif"
+                alt="Tworzenie interaktywnych treści w Ecurs"
+                className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
+                /* Consider adding width/height attributes for performance if known */
+                /* width={...} height={...} */
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pt-16"> {/* Changed background back to white */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center">Wiele sposobów dostępu</h2>
           <PricingSection />
