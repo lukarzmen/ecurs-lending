@@ -27,7 +27,7 @@ export default function PricingSection() {
     },
     {
       name: 'Powyżej 10 uczniów',
-      price: '1499 zł', // Cena roczna w złotówkach
+      price: '1699 zł', // Cena roczna w złotówkach
       pricingPeriod: 'za rok',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
