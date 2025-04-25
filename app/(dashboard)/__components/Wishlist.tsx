@@ -43,7 +43,7 @@ export default function WishlistComponent() {
         className="w-full max-w-md p-6 bg-white rounded-lg shadow-md"
       >
         <label htmlFor="name" className="block mb-2 text-lg text-center">
-          Twoje imie:
+          Twoje imię
         </label>
         <input
           type="text"
@@ -54,7 +54,7 @@ export default function WishlistComponent() {
           placeholder="Twoje imię"
         />
         <label htmlFor="phone" className="block mb-2 text-lg text-center">
-          Twój numer telefonu:
+          Twój numer telefonu
         </label>
         <input
           type="tel"
