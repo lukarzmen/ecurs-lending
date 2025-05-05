@@ -12,21 +12,21 @@ export default function WishlistComponent() {
 
     const formData = new FormData(e.currentTarget);
     const name = formData.get('name');
-    const phone = formData.get('phone');
+    const contact = formData.get('phone'); // Updated to match the API's "contact" field
+
     try {
-      const response = await fetch('https://ecurs.app.n8n.cloud/webhook/38bc8e50-3efc-4305-b951-145b7f6971bb', {
+      const response = await fetch('https://platforma.ecurs.pl/api/wishlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, phone }),
+        body: JSON.stringify({ name, contact }), // Updated to match the API payload structure
       });
 
-      if (!response.ok) {
-        toast.error('Spróbuj później lub skontaktuj się przez dane kontaktowe na stronie głównej.');
-      }
       if (response.ok) {
         toast.success('Odebraliśmy twoje dane kontaktowe i odezwiemy się wkrótce.');
+      } else {
+        toast.error('Spróbuj później lub skontaktuj się przez dane kontaktowe na stronie głównej.');
       }
     } catch (error) {
       console.error('Error:', error);
