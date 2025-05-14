@@ -20,7 +20,7 @@ export default function HomePage() {
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white rounded-full text-lg px-8 py-4 inline-flex items-center justify-center">
                   <a href="https://platforma.ecurs.pl/">
-                    Zobacz demo
+                    Przejdź do platformy
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
@@ -135,9 +135,9 @@ export default function HomePage() {
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Skontaktuj się z nami</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center">Masz pytania?</h2>
           <p className="mt-3 text-lg text-gray-500 text-center">
-        Jesteś zainteresowany/a? Zostaw kontakt, a odezwiemy się później!
+        Chcesz się dowiedzieć czegoś więcej? Zostaw kontakt, a odezwiemy się później!
           </p>
             <div className="mt-8">
               <WishlistComponent />
