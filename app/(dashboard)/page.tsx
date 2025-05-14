@@ -136,8 +136,13 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center">Masz pytania?</h2>
-          <p className="mt-3 text-lg text-gray-500 text-center">
-        Chcesz się dowiedzieć czegoś więcej? Zostaw kontakt, a odezwiemy się później!
+            <p className="mt-3 text-lg text-gray-500 text-center">
+            Może chcesz się dowiedzieć czegoś więcej lub porozmawiać o produkcie?
+            <br />
+            Zostaw kontakt, a odezwiemy się później!
+            </p>
+          <p>
+            
           </p>
             <div className="mt-8">
               <WishlistComponent />
