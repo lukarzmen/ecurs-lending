@@ -40,6 +40,14 @@ export default function PricingSection() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      {/* Promo Banner */}
+      <div className="mb-8">
+        <div className="bg-orange-100 border border-orange-300 rounded-lg px-6 py-4 text-center shadow-sm">
+          <span className="text-xl font-bold text-orange-600">
+            🎉 Promocja! Skorzystaj z 20% zniżki na pierwszy zakup dowolnego planu – tylko do końca miesiąca!
+          </span>
+        </div>
+      </div>
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {plans.map((plan, index) => (
           <PricingCard
@@ -69,26 +77,40 @@ function PricingCard({
   description: string;
   features: string[];
 }) {
+  // Calculate promo price if not free
+  const isFree = price === '0 zł';
+  let oldPrice = price;
+  let newPrice = price;
+
+  if (!isFree) {
+    // Extract numeric value for calculation (assumes format like "39 zł")
+    const numeric = parseFloat(price.replace(/[^\d.]/g, ''));
+    const promo = Math.round(numeric * 0.8 * 100) / 100; // 20% off, rounded to 2 decimals
+    newPrice = `${promo} zł`;
+  }
+
   return (
     <div className="pt-6">
       <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full">
-        {/* Remove flex-grow from this div */}
-        <div className="p-6"> 
+        <div className="p-6">
           <h2 className="text-2xl font-medium text-gray-900 mb-2">{name}</h2>
-          <p className="text-sm text-gray-600 mb-4 min-h-[4em]">{description}</p> {/* Optional: Add min-height to description for better alignment */}
-          <div className="text-4xl font-medium text-gray-900 mb-6">
-            {price && (
-              <div>
-                <span>{price}</span>
-                {pricingPeriod && (
-                  <span className="text-xl font-normal text-gray-600"> {pricingPeriod}</span>
-                )}
+          <p className="text-sm text-gray-600 mb-4 min-h-[4em]">{description}</p>
+          <div className="mb-6">
+            {isFree ? (
+              <span className="text-4xl font-medium text-green-600">{price}</span>
+            ) : (
+              <div className="flex flex-col items-start">
+                <span className="text-2xl text-gray-400 line-through">{oldPrice}{pricingPeriod && <span className="text-base font-normal"> {pricingPeriod}</span>}</span>
+                <span className="text-4xl font-bold text-orange-600">
+                  {newPrice}
+                  {pricingPeriod && <span className="text-xl font-normal text-gray-600"> {pricingPeriod}</span>}
+                </span>
+                <span className="text-xs text-orange-500 font-semibold mt-1">-20% zniżki</span>
               </div>
             )}
           </div>
         </div>
-        {/* Add flex-grow to this div */}
-        <div className="p-6 flex-grow"> 
+        <div className="p-6 flex-grow">
           <ul className="space-y-4 mb-8">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start">
