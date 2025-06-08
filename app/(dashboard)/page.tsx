@@ -20,7 +20,7 @@ export default function HomePage() {
                   <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych nauczycieli</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
                 </li>
               <li>
-                  <span className="font-semibold text-orange-500">✔ Dołącz bez ryzyka</span> – zarejestruj się i wypróbuj za darmo!
+                  <span className="font-semibold text-orange-500">✔ Dołącz bez ryzyka</span> – zarejestruj się i wypróbuj za darmo przez 3 miesiące!
                 </li>
                 <li>
                   <span className="font-semibold text-orange-500">✔ Oszczędzaj czas</span> – automatyzuj powtarzalne zadania i skup się na tym, co najważniejsze. 
@@ -40,11 +40,11 @@ export default function HomePage() {
                   </a>
                 </Button>
                 <div className="mt-4 text-sm text-gray-500">
-                  <span className="font-semibold text-orange-500">Nie czekaj i zacznij już dziś!</span>
+                  <span className="font-semibold text-orange-500">Nie czekaj i zacznij już dziś! Wystarczą 3 kliknięcia!</span>
                 </div>
               </div>
               <div className="mt-6 text-xs text-gray-400">
-                <span>Wystarczą 3 kliknięcia!</span>
+                <span>Rejestrując się zaczynasz darmowy 3 miesięczny okres próbny.</span>
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -74,7 +74,7 @@ export default function HomePage() {
               </p>
             </div>
             <div>
-              <h2 className="text-lg font-medium text-gray-900">Dostępność</h2>
+              <h2 className="text-lg font-medium text-gray-900">Wiele sposobów dostępu</h2>
               <p className="mt-2 text-base text-gray-500">
                 Twoje kursy są dostępne na komputerach, tabletach i smartfonach – zawsze i wszędzie.
               </p>
@@ -171,7 +171,7 @@ export default function HomePage() {
       </section>
       <section className="bg-white pt-16"> {/* Changed background back to white */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Wiele sposobów dostępu</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center">Cennik</h2>
           <PricingSection />
         </div>
       </section>
