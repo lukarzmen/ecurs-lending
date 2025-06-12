@@ -15,7 +15,7 @@ export default function PricingSection() {
       ],
     },
     {
-      name: 'Do 5 uczniów',
+      name: 'Plan dla indywidualnych twórców prowadzących do 10 uczniów.',
       price: '39 zł', // Cena roczna w złotówkach
       pricingPeriod: 'za miesiąc',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
@@ -26,7 +26,7 @@ export default function PricingSection() {
       ],
     },
     {
-      name: 'Powyżej 10 uczniów',
+      name: 'Dla szkół i placówek edukacyjnych lub twórców posiadających więcej niż 10 uczniów uczniów.',
       price: '1699 zł', // Cena roczna w złotówkach
       pricingPeriod: 'za rok',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
