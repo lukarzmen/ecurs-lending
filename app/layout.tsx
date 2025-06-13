@@ -47,7 +47,7 @@ export default function RootLayout({
         src="https://www.facebook.com/tr?id=1295563135637874&ev=PageView&noscript=1"
         /></noscript>      
       </head>
-      
+      <meta name="msvalidate.01" content="242A3760F9418E55873256075DECDC28" />
       <body className="min-h-[100dvh] bg-gray-50">
         <ToastProvider />
         {children}

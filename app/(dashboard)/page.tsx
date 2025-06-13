@@ -10,12 +10,49 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-              <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
-                <span>Zamień nudne kserówki</span>
-                <span className="block text-orange-500">na interaktywne materiały edukacyjne</span>
-                <span className="block text-orange-500">z Ecurs</span>
-              </h1>
-              <ul className="mt-6 mb-4 space-y-2 text-base text-gray-700 text-left">
+                <h1
+                  className="font-extrabold tracking-tight text-center lg:text-left"
+                  style={{
+                    fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                    fontSize: '3.5rem', // Increased font size
+                    lineHeight: 1.08,
+                    color: '#1a202c',
+                    letterSpacing: '-0.03em',
+                  }}
+                >
+                  <span style={{ display: 'block', color: '#22223b' }}>Zamień nudne kserówki</span>
+                  <span
+                    style={{
+                      display: 'block',
+                      color: '#ff6600',
+                      fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                      fontWeight: 800,
+                      fontSize: '3.1rem', // Increased font size
+                    }}
+                  >
+                    na interaktywne materiały edukacyjne
+                  </span>
+                  <span
+                    style={{
+                      display: 'block',
+                      color: '#ff6600',
+                      fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                      fontWeight: 800,
+                      fontSize: '3.1rem', // Increased font size
+                    }}
+                  >
+                    z Ecurs
+                  </span>
+                </h1>
+              <ul
+              className="mt-6 mb-4 space-y-2 text-base text-gray-700 text-left"
+              style={{
+                fontFamily: "'Inter', 'Segoe UI', Arial, sans-serif",
+                fontSize: '1.1rem',
+                color: '#343a40',
+                lineHeight: 1.7,
+              }}
+              >
                 <li>
                   <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych nauczycieli</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
                 </li>
@@ -175,22 +212,6 @@ export default function HomePage() {
           <PricingSection />
         </div>
       </section>
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Masz pytania?</h2>
-            <p className="mt-3 text-lg text-gray-500 text-center">
-            Może chcesz się dowiedzieć czegoś więcej lub porozmawiać o produkcie?
-            <br />
-            Zostaw kontakt, a odezwiemy się później!
-            </p>
-          <p>
-            
-          </p>
-            <div className="mt-8">
-              <WishlistComponent />
-            </div>
-          </div>
-        </section>
         <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Dlaczego warto wybrać Ecurs?</h2>
@@ -222,6 +243,22 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+            <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 text-center">Masz pytania?</h2>
+            <p className="mt-3 text-lg text-gray-500 text-center">
+            Może chcesz się dowiedzieć czegoś więcej lub porozmawiać o produkcie?
+            <br />
+            Zostaw kontakt, a odezwiemy się później!
+            </p>
+          <p>
+            
+          </p>
+            <div className="mt-8">
+              <WishlistComponent />
+            </div>
+          </div>
+        </section>
     </main>
   );
 }

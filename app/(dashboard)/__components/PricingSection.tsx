@@ -1,11 +1,10 @@
 import { Check } from 'lucide-react';
 
 export default function PricingSection() {
-  // Statyczne informacje o ofertach
   const plans = [
     {
       name: 'Wypróbuj platformę',
-      price: '0 zł', // Cena bezpłatna
+      price: '0 zł',
       pricingPeriod: 'za 3 miesiące',
       description: 'Przetestuj wszystkie funkcje platformy Ecurs bez opłat.',
       features: [
@@ -15,28 +14,36 @@ export default function PricingSection() {
       ],
     },
     {
-      name: 'Plan dla indywidualnych twórców prowadzących do 10 uczniów.',
-      price: '39 zł', // Cena roczna w złotówkach
+      name: 'Dla indywidualnych twórców',
+      price: '39 zł',
       pricingPeriod: 'za miesiąc',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
         'Tworzenie interaktywnych kursów',
         'Zarządzanie treściami i uczniami',
+        'Panel analityczny',
+        'Do 10 uczniów',
         'Podstawowe wsparcie techniczne',
       ],
     },
     {
-      name: 'Dla szkół i placówek edukacyjnych lub twórców posiadających więcej niż 10 uczniów uczniów.',
-      price: '1699 zł', // Cena roczna w złotówkach
+      name: 'Dla szkół lub twórców posiadających więcej niż 10 uczniów uczniów.',
+      price: '1699 zł',
       pricingPeriod: 'za rok',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
-        'Dostęp do wszystkich funkcjonalności',
-        'Nielimitowani członkowie zespołu',
+        'Tworzenie interaktywnych kursów',
+        'Zarządzanie treściami i uczniami',
+        'Panel analityczny',
+        'Bez ograniczeń liczby uczniów',
+        'Zarządzanie szkołą i nauczycielami',
         'Pełne wsparcie techniczne',
       ],
     }
   ];
+
+  // Calculate max features count for all plans
+  const maxFeatures = Math.max(...plans.map(plan => plan.features.length));
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -57,6 +64,7 @@ export default function PricingSection() {
             pricingPeriod={plan.pricingPeriod}
             description={plan.description}
             features={plan.features}
+            maxFeatures={maxFeatures}
           />
         ))}
       </div>
@@ -70,37 +78,49 @@ function PricingCard({
   description,
   pricingPeriod,
   features,
+  maxFeatures,
 }: {
   name: string;
   price: string;
   pricingPeriod: string | null;
   description: string;
   features: string[];
+  maxFeatures: number;
 }) {
-  // Calculate promo price if not free
   const isFree = price === '0 zł';
   let oldPrice = price;
   let newPrice = price;
 
   if (!isFree) {
-    // Extract numeric value for calculation (assumes format like "39 zł")
     const numeric = parseFloat(price.replace(/[^\d.]/g, ''));
-    const promo = Math.round(numeric * 0.8 * 100) / 100; // 20% off, rounded to 2 decimals
+    const promo = Math.round(numeric * 0.8 * 100) / 100;
     newPrice = `${promo} zł`;
   }
 
+  // Pad features for alignment
+  const paddedFeatures = [
+    ...features,
+    ...Array(maxFeatures - features.length).fill(''),
+  ];
+
   return (
-    <div className="pt-6">
+    <div className="pt-6 h-full flex flex-col">
       <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full">
-        <div className="p-6">
-          <h2 className="text-2xl font-medium text-gray-900 mb-2">{name}</h2>
-          <p className="text-sm text-gray-600 mb-4 min-h-[4em]">{description}</p>
-          <div className="mb-6">
+        <div className="p-6 flex flex-col h-full">
+          {/* Name */}
+          <h2 className="text-2xl font-medium text-gray-900 mb-2 flex items-center min-h-[3.5em]">{name}</h2>
+          {/* Description */}
+          <p className="text-sm text-gray-600 mb-4 flex items-center min-h-[3.5em]">{description}</p>
+          {/* Price */}
+          <div className="mb-6 flex flex-col justify-center min-h-[5.5em]">
             {isFree ? (
               <span className="text-4xl font-medium text-green-600">{price}</span>
             ) : (
               <div className="flex flex-col items-start">
-                <span className="text-2xl text-gray-400 line-through">{oldPrice}{pricingPeriod && <span className="text-base font-normal"> {pricingPeriod}</span>}</span>
+                <span className="text-2xl text-gray-400 line-through">
+                  {oldPrice}
+                  {pricingPeriod && <span className="text-base font-normal"> {pricingPeriod}</span>}
+                </span>
                 <span className="text-4xl font-bold text-orange-600">
                   {newPrice}
                   {pricingPeriod && <span className="text-xl font-normal text-gray-600"> {pricingPeriod}</span>}
@@ -109,16 +129,22 @@ function PricingCard({
               </div>
             )}
           </div>
-        </div>
-        <div className="p-6 flex-grow">
-          <ul className="space-y-4 mb-8">
-            {features.map((feature, index) => (
-              <li key={index} className="flex items-start">
-                <Check className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-700">{feature}</span>
+          {/* Features */}
+          <ul className="space-y-4 mb-8 flex flex-col justify-start min-h-[13em]">
+            {paddedFeatures.map((feature, index) => (
+              <li key={index} className="flex items-start min-h-[1.5em]">
+                {feature ? (
+                  <>
+                    <Check className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </>
+                ) : (
+                  <span className="w-7 h-5 mr-2" />
+                )}
               </li>
             ))}
           </ul>
+          <div className="flex-grow" />
         </div>
       </div>
     </div>
