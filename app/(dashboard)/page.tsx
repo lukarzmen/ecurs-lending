@@ -10,57 +10,57 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-                <h1
-                  className="font-extrabold tracking-tight text-center lg:text-left"
+              <h1
+                className="font-extrabold tracking-tight text-center lg:text-left"
+                style={{
+                  fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                  fontSize: '3.5rem', // Increased font size
+                  lineHeight: 1.08,
+                  color: '#1a202c',
+                  letterSpacing: '-0.03em',
+                }}
+              >
+                <span style={{ display: 'block', color: '#22223b' }}>Zamień nudne kserówki</span>
+                <span
                   style={{
+                    display: 'block',
+                    color: '#ff6600',
                     fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
-                    fontSize: '3.5rem', // Increased font size
-                    lineHeight: 1.08,
-                    color: '#1a202c',
-                    letterSpacing: '-0.03em',
+                    fontWeight: 800,
+                    fontSize: '3.1rem', // Increased font size
                   }}
                 >
-                  <span style={{ display: 'block', color: '#22223b' }}>Zamień nudne kserówki</span>
-                  <span
-                    style={{
-                      display: 'block',
-                      color: '#ff6600',
-                      fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
-                      fontWeight: 800,
-                      fontSize: '3.1rem', // Increased font size
-                    }}
-                  >
-                    na interaktywne materiały edukacyjne
-                  </span>
-                  <span
-                    style={{
-                      display: 'block',
-                      color: '#ff6600',
-                      fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
-                      fontWeight: 800,
-                      fontSize: '3.1rem', // Increased font size
-                    }}
-                  >
-                    z Ecurs
-                  </span>
-                </h1>
+                  na interaktywne materiały edukacyjne
+                </span>
+                <span
+                  style={{
+                    display: 'block',
+                    color: '#ff6600',
+                    fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                    fontWeight: 800,
+                    fontSize: '3.1rem', // Increased font size
+                  }}
+                >
+                  z Ecurs
+                </span>
+              </h1>
               <ul
-              className="mt-6 mb-4 space-y-2 text-base text-gray-700 text-left"
-              style={{
-                fontFamily: "'Inter', 'Segoe UI', Arial, sans-serif",
-                fontSize: '1.1rem',
-                color: '#343a40',
-                lineHeight: 1.7,
-              }}
+                className="mt-6 mb-4 space-y-2 text-base text-gray-700 text-left"
+                style={{
+                  fontFamily: "'Inter', 'Segoe UI', Arial, sans-serif",
+                  fontSize: '1.1rem',
+                  color: '#343a40',
+                  lineHeight: 1.7,
+                }}
               >
                 <li>
                   <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych nauczycieli</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
                 </li>
-              <li>
+                <li>
                   <span className="font-semibold text-orange-500">✔ Dołącz bez ryzyka</span> – zarejestruj się i wypróbuj za darmo przez 3 miesiące!
                 </li>
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Oszczędzaj czas</span> – automatyzuj powtarzalne zadania i skup się na tym, co najważniejsze. 
+                  <span className="font-semibold text-orange-500">✔ Oszczędzaj czas</span> – automatyzuj powtarzalne zadania i skup się na tym, co najważniejsze.
                 </li>
                 <li>
                   <span className="font-semibold text-orange-500">✔ Wspieraj rozwój uczniów</span> – korzystaj z narzędzi, które motywują i personalizują naukę.
@@ -116,7 +116,7 @@ export default function HomePage() {
                 Twoje kursy są dostępne na komputerach, tabletach i smartfonach – zawsze i wszędzie.
               </p>
             </div>
-    
+
           </div>
         </div>
       </section>
@@ -138,8 +138,8 @@ export default function HomePage() {
                 src="/generate_content.gif"
                 alt="Generowanie treści AI w Ecurs"
                 className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
-                /* Consider adding width/height attributes for performance if known */
-                /* width={...} height={...} */
+              /* Consider adding width/height attributes for performance if known */
+              /* width={...} height={...} */
               />
             </div>
             {/* Text Content Column (Right on large screens) */}
@@ -174,8 +174,8 @@ export default function HomePage() {
                 src="/interactive_content.gif"
                 alt="Tworzenie interaktywnych treści w Ecurs"
                 className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
-                /* Consider adding width/height attributes for performance if known */
-                /* width={...} height={...} */
+              /* Consider adding width/height attributes for performance if known */
+              /* width={...} height={...} */
               />
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function HomePage() {
                 Zarządzaj swoimi kursami i uczniami
               </h2>
               <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
-                Dajemy Ci pełną kontrolę nad Twoimi kursami – zarządzaj swoją grupą i materiałami. 
+                Dajemy Ci pełną kontrolę nad Twoimi kursami – zarządzaj swoją grupą i materiałami.
                 Dzięki modułowi analityki możesz śledzić swoją skuteczność, a więc i podejmować lepsze decyzje na podstawie realnych danych.
               </p>
             </div>
@@ -212,7 +212,7 @@ export default function HomePage() {
           <PricingSection />
         </div>
       </section>
-        <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Dlaczego warto wybrać Ecurs?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -243,22 +243,38 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-            <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Masz pytania?</h2>
-            <p className="mt-3 text-lg text-gray-500 text-center">
-            Może chcesz się dowiedzieć czegoś więcej lub porozmawiać o produkcie?
-            <br />
-            Zostaw kontakt, a odezwiemy się później!
-            </p>
-          <p>
-            
-          </p>
-            <div className="mt-8">
-              <WishlistComponent />
-            </div>
+      <section className="py-10 bg-white">
+        <div className="container mx-auto max-w-xl text-center ">
+          <h2 className="text-3xl font-bold mb-6">Masz pytania?</h2>
+          <p className="mb-6 text-gray-600">Chcesz się dowiedzieć więcej o produkcie lub porozmawiać? Napisz do nas na email lub Facebook!</p>
+          <div className="flex flex-col gap-4 items-center">
+            <a
+              href="mailto:kontakt@ecurs.pl"
+              className="flex items-center gap-3 hover:text-blue-600 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* Email SVG icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v4" />
+              </svg>
+              kontakt@ecurs.pl
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61575600617982"
+              className="flex items-center gap-3 hover:text-blue-600 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* Facebook SVG icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-700" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
+              </svg>
+              Znajdź nas na Facebooku
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
     </main>
   );
 }

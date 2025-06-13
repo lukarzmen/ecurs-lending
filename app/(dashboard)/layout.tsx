@@ -16,11 +16,20 @@ function Header() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="border-t border-gray-200 py-4 text-center text-gray-500">
+      © {new Date().getFullYear()} Ecurs. All rights reserved.
+    </footer>
+  );
+}
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <section className="flex flex-col min-h-screen">
       <Header />
       {children}
+      <Footer />
     </section>
   );
 }
