@@ -19,7 +19,8 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-gray-200 py-4 text-center text-gray-500">
-      © {new Date().getFullYear()} Ecurs. All rights reserved.
+      © {new Date().getFullYear()} Ecurs. Wszelkie prawa zastrzeżone. <br />
+      <span className="text-xs">Łukasz Mędyk</span>
     </footer>
   );
 }
