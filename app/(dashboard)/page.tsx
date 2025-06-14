@@ -3,6 +3,12 @@ import { ArrowRight } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
 import WishlistComponent from './__components/Wishlist';
 
+export const metadata = {
+  title: "Ecurs – interaktywna platforma edukacyjna. Od nauczycieli dla uczniów.",
+  description:
+    "Zamień nudne kserówki na interaktywne materiały edukacyjne z Ecurs. Twórz, zarządzaj i sprzedawaj kursy online. Nowoczesna platforma dla nauczycieli i uczniów.",
+};
+
 export default function HomePage() {
   return (
     <main>
