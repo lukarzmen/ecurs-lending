@@ -20,7 +20,7 @@ export default function PricingSection() {
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
         'Tworzenie interaktywnych kursów',
-        'Zarządzanie treściami i uczniami',
+        'Zarządzanie kursami',
         'Panel analityczny',
         'Do 10 uczniów',
         'Podstawowe wsparcie techniczne',
@@ -33,7 +33,7 @@ export default function PricingSection() {
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
         'Tworzenie interaktywnych kursów',
-        'Zarządzanie treściami i uczniami',
+        'Zarządzanie kursami',
         'Panel analityczny',
         'Bez ograniczeń liczby uczniów',
         'Zarządzanie szkołą i nauczycielami',

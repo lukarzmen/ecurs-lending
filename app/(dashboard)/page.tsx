@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
 import WishlistComponent from './__components/Wishlist';
 
@@ -254,18 +254,13 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold mb-6">Masz pytania?</h2>
           <p className="mb-6 text-gray-600">Chcesz się dowiedzieć więcej o produkcie lub porozmawiać? Napisz do nas na email lub Facebook!</p>
           <div className="flex flex-col gap-4 items-center">
-            <a
-              href="mailto:kontakt@ecurs.pl"
-              className="flex items-center gap-3 hover:text-blue-600 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div className="flex items-center gap-3">
               {/* Email SVG icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v4" />
-              </svg>
-              kontakt@ecurs.pl
-            </a>
+              <Mail className="w-6 h-6 text-blue-500" />
+              <span className="select-all cursor-pointer" title="Skopiuj adres email">
+                kontakt@ecurs.pl
+              </span>
+            </div>
             <a
               href="https://www.facebook.com/profile.php?id=61575600617982"
               className="flex items-center gap-3 hover:text-blue-600 transition-colors"
