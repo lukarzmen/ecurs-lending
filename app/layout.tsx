@@ -43,6 +43,8 @@ export default function RootLayout({
             `,
           }}
         />
+        <link rel="icon" href="/favicon.ico" />
+
         <noscript><img height="1" width="1" style={{ display: 'none' }}
         src="https://www.facebook.com/tr?id=1295563135637874&ev=PageView&noscript=1"
         /></noscript>      
