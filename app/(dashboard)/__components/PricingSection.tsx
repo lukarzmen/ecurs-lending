@@ -47,14 +47,22 @@ export default function PricingSection() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Promo Banner */}
+      {/* Promo Banner: 3 za darmo tylko do końca wakacji */}
       <div className="mb-8">
+        <div className="bg-yellow-100 border border-yellow-300 rounded-lg px-6 py-3 text-center shadow-sm">
+          <span className="text-lg font-bold text-yellow-800">
+            🎉 Promocja: 3 miesiące za darmo tylko do końca wakacji!
+          </span>
+        </div>
+      </div>
+      {/* Existing promo banner */}
+      {/* <div className="mb-8">
         <div className="bg-orange-100 border border-orange-300 rounded-lg px-6 py-4 text-center shadow-sm">
           <span className="text-xl font-bold text-orange-600">
             🎉 Promocja! Skorzystaj z 20% zniżki na pierwszy zakup dowolnego planu – tylko do końca miesiąca!
           </span>
         </div>
-      </div>
+      </div> */}
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {plans.map((plan, index) => (
           <PricingCard
