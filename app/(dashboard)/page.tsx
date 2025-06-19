@@ -257,9 +257,13 @@ export default function HomePage() {
             <div className="flex items-center gap-3">
               {/* Email SVG icon */}
               <Mail className="w-6 h-6 text-blue-500" />
-              <span className="select-all cursor-pointer" title="Skopiuj adres email">
+                <a
+                href="mailto:kontakt@ecurs.pl"
+                className="select-all cursor-pointer hover:underline"
+                title="Skopiuj adres email"
+                >
                 kontakt@ecurs.pl
-              </span>
+                </a>
             </div>
             <a
               href="https://www.facebook.com/profile.php?id=61575600617982"
