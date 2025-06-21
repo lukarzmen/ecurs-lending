@@ -46,6 +46,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <meta name="msvalidate.01" content="242A3760F9418E55873256075DECDC28" />
+      <meta property="fb:app_id" content="580840648168709" />
       <body className="min-h-[100dvh] bg-gray-50">
         <ToastProvider />
         {children}
