@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
-import WishlistComponent from './__components/Wishlist';
 
 export const metadata = {
   title: "Ecurs – interaktywna platforma edukacyjna. Od nauczycieli dla uczniów.",
@@ -20,6 +19,9 @@ export const metadata = {
         alt: 'Ecurs - nowoczesna edukacja',
       },
     ],
+  },
+  other: {
+    'fb:app_id': '580840648168709', // Your Facebook App ID
   },
 };
 
