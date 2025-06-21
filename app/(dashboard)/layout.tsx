@@ -17,11 +17,7 @@ export const metadata = {
         height: 630,
         alt: 'Ecurs - nowoczesna edukacja',
       },
-    ],
-    facebook: {
-      appId: '580840648168709',
-    },
-    appId: '580840648168709',
+    ]
   },
 };
 
