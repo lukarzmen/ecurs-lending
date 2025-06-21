@@ -2,24 +2,6 @@
 
 import Link from 'next/link';
 
-export const metadata = {
-  title: "Ecurs – interaktywna platforma edukacyjna. Od nauczycieli dla uczniów.",
-  description: "Zamień nudne kserówki na interaktywne materiały edukacyjne z Ecurs. Twórz, zarządzaj i sprzedawaj kursy online. Nowoczesna platforma dla nauczycieli i uczniów.",
-  openGraph: {
-    title: 'Ecurs - nowoczesna edukacja',
-    description: 'Zacznij tworzyć interaktywne kursy online z Ecurs.',
-    url: 'https://uczzecurs.pl/',
-    type: 'website',
-    images: [
-      {
-        url: 'https://uczzecurs.pl/demo.png',
-        width: 1200,
-        height: 630,
-        alt: 'Ecurs - nowoczesna edukacja',
-      },
-    ]
-  },
-};
 
 function Header() {
   return (
