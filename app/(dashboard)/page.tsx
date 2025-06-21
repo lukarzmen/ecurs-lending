@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
 
+
+
 export default function HomePage() {
   return (
     <main>
