@@ -249,6 +249,26 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Zobacz, co dla edukatorów oferuje platforma Ecurs
+          </h2>
+          <p className="mb-8 text-lg text-gray-600">
+            Jak zarejestrować się i stworzyć swoją pierwszą lekcję? Obejrzyj krótki film instruktażowy.
+          </p>
+          <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg" style={{ aspectRatio: '16/9' }}>
+            <iframe
+              src="https://www.youtube.com/embed/E50cc-3huk4?si=k9gIB9PKbBieh7n9"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </section>
       <section className="py-10 bg-white">
         <div className="container mx-auto max-w-xl text-center ">
           <h2 className="text-3xl font-bold mb-6">Masz pytania?</h2>
