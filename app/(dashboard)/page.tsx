@@ -19,9 +19,8 @@ export const metadata = {
         alt: 'Ecurs - nowoczesna edukacja',
       },
     ],
-  },
-  other: {
-    'fb:app_id': '580840648168709', // Your Facebook App ID
+    // This will render <meta property="fb:app_id" ...>
+    appId: '580840648168709',
   },
 };
 
