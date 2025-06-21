@@ -44,10 +44,12 @@ export default function RootLayout({
           }}
         />
         <link rel="icon" href="/favicon.ico" />
-
-        <noscript><img height="1" width="1" style={{ display: 'none' }}
-        src="https://www.facebook.com/tr?id=1295563135637874&ev=PageView&noscript=1"
-        /></noscript>      
+        {/* Open Graph meta tags for Facebook thumbnail */}
+        <meta property="og:title" content="Ecurs - nowoczesna edukacja" />
+        <meta property="og:description" content="Zacznij tworzyć interaktywne kursy online z Ecurs." />
+        <meta property="og:image" content="https://uczzecurs.pl/logo.png" />
+        <meta property="og:url" content="https://uczzecurs.pl/" />
+        <meta property="og:type" content="website" />
       </head>
       <meta name="msvalidate.01" content="242A3760F9418E55873256075DECDC28" />
       <body className="min-h-[100dvh] bg-gray-50">
