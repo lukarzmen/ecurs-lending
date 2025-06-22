@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://uczzecurs.pl/demo.png',
+        url: 'https://uczzecurs.pl/demo3.png',
         width: 1200,
         height: 630,
         alt: 'Ecurs - nowoczesna edukacja',
