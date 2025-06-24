@@ -22,13 +22,13 @@ export default function PricingSection() {
         'Tworzenie interaktywnych kursów',
         'Zarządzanie kursami',
         'Panel analityczny',
-        'Do 15 uczniów w kursach zamkniętych',
+        'Do 20 uczniów w kursach zamkniętych',
         'Podstawowe wsparcie techniczne',
       ],
     },
     {
-      name: 'Dla szkół lub twórców posiadających więcej niż 15 uczniów w zamkniętych kursach',
-      price: '1699 zł',
+      name: 'Dla szkół lub twórców posiadających więcej niż 20 uczniów w zamkniętych kursach',
+      price: '1499 zł',
       pricingPeriod: 'za rok',
       description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
       features: [
