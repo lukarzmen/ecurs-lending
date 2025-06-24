@@ -256,7 +256,11 @@ export default function HomePage() {
             </div>
             <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-orange-500 mb-2">Postępy uczniów i nauczycieli</h3>
-              <p className="text-gray-700">Uczniowie i nauczyciele mogą na bieżąco śledzić swoje postępy, wyniki i aktywność na platformie, co motywuje do dalszego rozwoju.</p>
+              <p className="text-gray-700">
+                Uczniowie i nauczyciele mogą na bieżąco śledzić swoje postępy, wyniki i aktywność na platformie, co motywuje do dalszego rozwoju.
+                Po ukończeniu kursu uczniowie otrzymują certyfikat ukończenia.
+                
+              </p>
             </div>
           </div>
         </div>
