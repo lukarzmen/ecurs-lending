@@ -4,7 +4,7 @@ import PricingSection from './__components/PricingSection';
 
 export const metadata = {
   title: "Ecurs – interaktywna platforma edukacyjna. Od nauczycieli dla uczniów.",
-  description: "Zamień nudne kserówki na interaktywne materiały edukacyjne z Ecurs. Twórz, zarządzaj i sprzedawaj kursy online. Nowoczesna platforma dla nauczycieli i uczniów.",
+  description: "Dziel się wiedzą z interaktywnymi materiałami edukacyjnymi z Ecurs. Twórz, zarządzaj i sprzedawaj kursy online. Nowoczesna platforma dla nauczycieli i uczniów.",
   openGraph: {
     title: 'Ecurs - nowoczesna edukacja',
     description: 'Zacznij tworzyć interaktywne kursy online z Ecurs.',
@@ -32,23 +32,14 @@ export default function HomePage() {
                 className="font-extrabold tracking-tight text-center lg:text-left"
                 style={{
                   fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
-                  fontSize: '3.5rem', // Increased font size
+                  fontSize: '3.5rem',
                   lineHeight: 1.08,
                   color: '#1a202c',
                   letterSpacing: '-0.03em',
                 }}
               >
-                <span style={{ display: 'block', color: '#22223b' }}>Zamień nudne kserówki</span>
-                <span
-                  style={{
-                    display: 'block',
-                    color: '#ff6600',
-                    fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
-                    fontWeight: 800,
-                    fontSize: '3.1rem', // Increased font size
-                  }}
-                >
-                  na interaktywne materiały edukacyjne
+                <span style={{ display: 'block', color: '#22223b' }}>
+                  Dziel się wiedzą
                 </span>
                 <span
                   style={{
@@ -56,10 +47,21 @@ export default function HomePage() {
                     color: '#ff6600',
                     fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
                     fontWeight: 800,
-                    fontSize: '3.1rem', // Increased font size
+                    fontSize: '3.1rem',
                   }}
                 >
-                  z Ecurs
+                  z interaktywnymi materiałami edukacyjnymi
+                </span>
+                <span
+                  style={{
+                    display: 'block',
+                    color: '#ff6600',
+                    fontFamily: "'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif",
+                    fontWeight: 800,
+                    fontSize: '3.1rem',
+                  }}
+                >
+                  od Ecurs
                 </span>
               </h1>
               <ul
@@ -72,7 +74,7 @@ export default function HomePage() {
                 }}
               >
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych nauczycieli</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
+                  <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych twórców edukacyjnych</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
                 </li>
                 <li>
                   <span className="font-semibold text-orange-500">✔ Dołącz bez ryzyka</span> – zarejestruj się i wypróbuj za darmo przez 3 miesiące!
@@ -240,7 +242,7 @@ export default function HomePage() {
             </div>
             <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-orange-500 mb-2">Marketplace kursów</h3>
-              <p className="text-gray-700">Twoje kursy mogą trafić do marketplace, gdzie inni użytkownicy mogą je zobaczyć i dołączyć do Twojego kursu. Zwiększ swoją widoczność i zyskaj nowych klientów.</p>
+              <p className="text-gray-700">Twoje kursy mogą trafić do marketplace, gdzie inni użytkownicy mogą je zobaczyć and dołączyć do Twojego kursu. Zwiększ swoją widoczność i zyskaj nowych klientów.</p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-orange-500 mb-2">Pełna kontrola i zarządzanie</h3>
