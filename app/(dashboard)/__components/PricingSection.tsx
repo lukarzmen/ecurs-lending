@@ -6,38 +6,42 @@ export default function PricingSection() {
       name: 'Wypróbuj platformę',
       price: '0 zł',
       pricingPeriod: 'za 3 miesiące',
-      description: 'Przetestuj wszystkie funkcje platformy Ecurs bez opłat.',
+      description: 'Przetestuj wszystkie funkcje platformy Ecurs bez opłat przez pełne 3 miesiące.',
       features: [
-        'Pełny dostęp do kursów i funkcji',
+        'Pełny dostęp do wszystkich funkcji',
+        'Tworzenie ścieżek edukacyjnych',
+        'Kursy tworzone na bieżąco',
+        'Zaawansowane analityki',
+        'Powiadomienia w czasie rzeczywistym',
         'Dostęp z dowolnego urządzenia',
-        'Bez zobowiązań przez 3 miesiące',
+        'Wsparcie techniczne',
       ],
     },
     {
       name: 'Dla indywidualnych twórców',
       price: '39 zł',
       pricingPeriod: 'za miesiąc',
-      description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
+      description: 'Idealne rozwiązanie dla freelancerów i małych edukatorów.',
       features: [
-        'Tworzenie interaktywnych kursów',
-        'Zarządzanie kursami',
-        'Panel analityczny',
-        'Do 20 uczniów w kursach zamkniętych',
-        'Podstawowe wsparcie techniczne',
+        'Pełny dostęp do wszystkich funkcji',
+        'Tworzenie ścieżek edukacyjnych',
+        'Kursy tworzone na bieżąco',
+        'Zaawansowane analityki',
+        'Powiadomienia w czasie rzeczywistym',
+        'Dostęp z dowolnego urządzenia',
+        'Wsparcie techniczne',
       ],
     },
     {
-      name: 'Dla szkół lub twórców posiadających więcej niż 20 uczniów w zamkniętych kursach',
-      price: '1499 zł',
+      name: 'Dla szkół i dużych twórców',
+      price: '1799 zł',
       pricingPeriod: 'za rok',
-      description: 'Uzyskaj pełny roczny dostęp do Ecurs i wszystkich jej funkcji.',
+      description: 'Kompletne rozwiązanie dla instytucji edukacyjnych i dużych organizacji.',
       features: [
-        'Tworzenie interaktywnych kursów',
-        'Zarządzanie kursami',
-        'Panel analityczny',
+        'Wszystko z poprzednich planów',
         'Bez ograniczeń liczby uczniów',
-        'Zarządzanie szkołą i nauczycielami',
-        'Pełne wsparcie techniczne',
+        'Zarządzanie zespołem nauczycieli',
+        'Priorytetowe wsparcie techniczne',
       ],
     }
   ];
@@ -47,12 +51,19 @@ export default function PricingSection() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Promo Banner: 3 za darmo tylko do końca wakacji */}
-      <div className="mb-8">
-        <div className="bg-yellow-100 border border-yellow-300 rounded-lg px-6 py-3 text-center shadow-sm">
-          <span className="text-lg font-bold text-yellow-800">
-            🎉 Promocja: 3 miesiące za darmo tylko do końca wakacji!
-          </span>
+      {/* Promo Banner: 3 miesiące za darmo */}
+      <div className="mb-12">
+        <div className="bg-gradient-to-r from-orange-100 to-yellow-100 border-2 border-orange-300 rounded-xl px-8 py-6 text-center shadow-lg">
+          <div className="flex items-center justify-center mb-2">
+            <span className="text-3xl mr-3">🎉</span>
+            <span className="text-2xl font-bold text-orange-800">
+              Promocja: 3 miesiące za darmo!
+            </span>
+            <span className="text-3xl ml-3">🚀</span>
+          </div>
+          <p className="text-lg text-orange-700 font-medium">
+            Wypróbuj wszystkie funkcje bez zobowiązań • Pełna funkcjonalność • Bez ukrytych kosztów
+          </p>
         </div>
       </div>
       {/* Existing promo banner */}
@@ -113,46 +124,53 @@ function PricingCard({
 
   return (
     <div className="pt-6 h-full flex flex-col">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full">
-        <div className="p-6 flex flex-col h-full">
+      <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full border border-gray-100">
+        <div className="p-8 flex flex-col h-full">
           {/* Name */}
-          <h2 className="text-2xl font-medium text-gray-900 mb-2 flex items-center min-h-[3.5em]">{name}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3 flex items-center min-h-[4em] leading-tight">{name}</h2>
           {/* Description */}
-          <p className="text-sm text-gray-600 mb-4 flex items-center min-h-[3.5em]">{description}</p>
+          <p className="text-gray-600 mb-6 flex items-center min-h-[3em] leading-relaxed">{description}</p>
           {/* Price */}
-          <div className="mb-6 flex flex-col justify-center min-h-[5.5em]">
+          <div className="mb-8 flex flex-col justify-center min-h-[6em]">
             {isFree ? (
-              <span className="text-4xl font-medium text-green-600">{price}</span>
+              <div className="text-center">
+                <span className="text-5xl font-bold text-green-600">{price}</span>
+                <div className="text-sm text-green-600 font-medium mt-2 bg-green-50 px-3 py-1 rounded-full inline-block">
+                  {pricingPeriod}
+                </div>
+              </div>
             ) : (
-              <div className="flex flex-col items-start">
-                <span className="text-2xl text-gray-400 line-through">
-                  {oldPrice}
-                  {pricingPeriod && <span className="text-base font-normal"> {pricingPeriod}</span>}
-                </span>
-                <span className="text-4xl font-bold text-orange-600">
-                  {newPrice}
-                  {pricingPeriod && <span className="text-xl font-normal text-gray-600"> {pricingPeriod}</span>}
-                </span>
-                <span className="text-xs text-orange-500 font-semibold mt-1">-20% zniżki</span>
+              <div className="text-center">
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl text-gray-400 line-through mb-1">
+                    {oldPrice}
+                  </span>
+                  <span className="text-5xl font-bold text-orange-600 mb-2">
+                    {newPrice}
+                  </span>
+                  <span className="text-lg text-gray-600">{pricingPeriod}</span>
+                  <span className="text-sm text-orange-500 font-semibold mt-2 bg-orange-50 px-3 py-1 rounded-full">
+                    -20% zniżki
+                  </span>
+                </div>
               </div>
             )}
           </div>
           {/* Features */}
-          <ul className="space-y-4 mb-8 flex flex-col justify-start min-h-[13em]">
+          <ul className="space-y-3 mb-8 flex flex-col justify-start flex-grow">
             {paddedFeatures.map((feature, index) => (
               <li key={index} className="flex items-start min-h-[1.5em]">
                 {feature ? (
                   <>
-                    <Check className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
+                    <Check className="h-5 w-5 text-orange-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 leading-relaxed">{feature}</span>
                   </>
                 ) : (
-                  <span className="w-7 h-5 mr-2" />
+                  <span className="w-8 h-5 mr-3" />
                 )}
               </li>
             ))}
           </ul>
-          <div className="flex-grow" />
         </div>
       </div>
     </div>

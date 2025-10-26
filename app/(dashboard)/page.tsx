@@ -3,11 +3,11 @@ import { ArrowRight, Mail } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
 
 export const metadata = {
-  title: "Ecurs – interaktywna platforma edukacyjna. Od nauczycieli dla uczniów.",
-  description: "Dziel się wiedzą z interaktywnymi materiałami edukacyjnymi z Ecurs. Twórz, zarządzaj i sprzedawaj kursy online. Nowoczesna platforma dla nauczycieli i uczniów.",
+  title: "Ecurs – nowoczesna platforma edukacyjna z AI. Ścieżki edukacyjne, analityki i Stripe Connect.",
+  description: "Twórz ścieżki edukacyjne, kursy na bieżąco, sprzedawaj w subskrypcjach. Zaawansowane analityki, powiadomienia i płatności przez Stripe Connect. 3 miesiące za darmo!",
   openGraph: {
-    title: 'Ecurs - nowoczesna edukacja',
-    description: 'Zacznij tworzyć interaktywne kursy online z Ecurs.',
+    title: 'Ecurs - przyszłość edukacji online',
+    description: 'Ścieżki edukacyjne, kursy na bieżąco, analityki AI i Stripe Connect. Zacznij tworzyć już dziś - 3 miesiące za darmo!',
     url: 'https://uczzecurs.pl/',
     type: 'website',
     images: [
@@ -15,7 +15,7 @@ export const metadata = {
         url: 'https://uczzecurs.pl/demo3.png',
         width: 1200,
         height: 630,
-        alt: 'Ecurs - nowoczesna edukacja',
+        alt: 'Ecurs - nowoczesna platforma edukacyjna 2025',
       },
     ]
   },
@@ -65,7 +65,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <ul
-                className="mt-6 mb-4 space-y-2 text-base text-gray-700 text-left"
+                className="mt-6 mb-4 space-y-3 text-base text-gray-700 text-left"
                 style={{
                   fontFamily: "'Inter', 'Segoe UI', Arial, sans-serif",
                   fontSize: '1.1rem',
@@ -74,195 +74,525 @@ export default function HomePage() {
                 }}
               >
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Dołącz do grona nowoczesnych twórców edukacyjnych</span> – bądź o krok przed innymi i pokaż swoim uczniom, że edukacja może być angażująca i nowoczesna.
+                  <span className="font-semibold text-orange-500">🚀 Twórz ścieżki edukacyjne</span> – buduj kompleksowe programy nauczania z powiązanymi kursami i materiałami.
                 </li>
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Dołącz bez ryzyka</span> – zarejestruj się i wypróbuj za darmo przez 3 miesiące!
+                  <span className="font-semibold text-orange-500">⚡ Kursy tworzone na bieżąco</span> – dodawaj nowe lekcje i materiały w trakcie trwania kursu, dostosowując się do potrzeb uczniów.
                 </li>
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Oszczędzaj czas</span> – automatyzuj powtarzalne zadania i skup się na tym, co najważniejsze.
+                  <span className="font-semibold text-orange-500">💰 Sprzedaż subskrypcyjna i jednorazowa</span> – oferuj dostęp miesięczny/roczny lub sprzedawaj materiały jako zakupy jednorazowe.
                 </li>
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Wspieraj rozwój uczniów</span> – korzystaj z narzędzi, które motywują i personalizują naukę.
+                  <span className="font-semibold text-orange-500">🆓 Okresy próbne</span> – pozwól uczniom wypróbować Twoje kursy za darmo przed zakupem.
                 </li>
                 <li>
-                  <span className="font-semibold text-orange-500">✔ Zwiększ widoczność swoich kursów</span> – dzięki marketplace Twoje materiały mogą dotrzeć do większej liczby odbiorców.
+                  <span className="font-semibold text-orange-500">💳 Stripe Connect</span> – otrzymuj płatności bezpośrednio na swoje konto z automatycznym rozliczaniem prowizji.
+                </li>
+                <li>
+                  <span className="font-semibold text-orange-500">📊 Zaawansowane analityki</span> – śledź postępy uczniów, przychody i skuteczność materiałów w czasie rzeczywistym.
                 </li>
               </ul>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white rounded-full text-lg px-8 py-4 inline-flex items-center justify-center shadow-lg transition-transform hover:scale-105">
+                <Button asChild className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-full text-lg px-10 py-4 inline-flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                   <a href="https://platforma.ecurs.pl/">
-                    Przejdź do platformy
+                    Zacznij za darmo już dziś
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
-                <div className="mt-4 text-sm text-gray-500">
-                  <span className="font-semibold text-orange-500">Nie czekaj i zacznij już dziś! Wystarczą 3 kliknięcia!</span>
+                <div className="mt-4 text-sm text-gray-600">
+                  <span className="font-semibold text-orange-600">🎯 3 miesiące bezpłatnego dostępu • Bez zobowiązań • Pełna funkcjonalność</span>
                 </div>
               </div>
-              <div className="mt-6 text-xs text-gray-400">
-                <span>Rejestrując się zaczynasz darmowy 3 miesięczny okres próbny.</span>
+              <div className="mt-6 text-xs text-gray-500">
+                <span>💡 Rejestrując się otrzymujesz natychmiastowy dostęp do wszystkich funkcji platformy na 3 miesiące.</span>
               </div>
             </div>
-            <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-              <img
-                src="/app_demo.gif"
-                alt="Demo aplikacji Ecurs"
-                className="rounded-lg shadow-lg"
-              />
+            <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-end">
+              <div className="relative lg:ml-16 max-w-lg">
+                <div className="bg-orange-50 rounded-lg px-3 py-1 inline-block mb-4">
+                  <span className="text-sm font-medium text-orange-700">🎬 Demo na żywo</span>
+                </div>
+                <img
+                  src="/app_demo.gif"
+                  alt="Demo aplikacji Ecurs - zobacz jak działa platforma"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
+                />
+                {/* Optional overlay with play button for video-like appearance */}
+                <div className="absolute inset-0 bg-black/10 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-orange-600 text-2xl ml-1">▶</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-lg font-medium text-gray-900">Wszytko w jednym miejscu</h2>
-              <p className="mt-2 text-base text-gray-500">
-                Zarządzaj kursami i kontaktem z Twoimi uczniami przez jedną platformę.
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Kompletne rozwiązanie dla edukatorów</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Wszystko czego potrzebujesz do tworzenia, zarządzania i sprzedaży kursów online w jednym miejscu
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Ścieżki edukacyjne</h3>
+              <p className="text-gray-600">
+                Twórz strukturalne programy nauczania łączące wiele kursów w logiczną sekwencję.
               </p>
             </div>
-            <div>
-              <h2 className="text-lg font-medium text-gray-900">Interaktywność</h2>
-              <p className="mt-2 text-base text-gray-500">
-                Ze wsparciem sztucznej inteligencji twórz interaktywne materiały, które angażują i motywują Twoich uczniów.
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Kursy na bieżąco</h3>
+              <p className="text-gray-600">
+                Dodawaj nowe materiały w trakcie trwania kursu, dostosowując się do potrzeb uczniów.
               </p>
             </div>
-            <div>
-              <h2 className="text-lg font-medium text-gray-900">Wiele sposobów dostępu</h2>
-              <p className="mt-2 text-base text-gray-500">
-                Twoje kursy są dostępne na komputerach, tabletach i smartfonach – zawsze i wszędzie.
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Elastyczne płatności</h3>
+              <p className="text-gray-600">
+                Sprzedawaj subskrypcje, oferuj okresy próbne lub sprzedawaj materiały jednorazowo.
               </p>
             </div>
-
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🔔</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Smart powiadomienia</h3>
+              <p className="text-gray-600">
+                Automatyczne powiadomienia o postępach, terminach i nowych materiałach.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50"> {/* Changed background for visual separation */}
-        <div className="max-w-5xl mx-auto px-8 sm:px-10 lg:px-12 text-center"> {/* Increased max-width and padding */}
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Rozwijaj swoją wizję edukacyjną z Ecurs</h2>
-          <p className="mt-3 text-lg text-gray-500">
-            Skorzystaj z platformy, która ułatwi Ci tworzenie kursów i zarządzanie nimi. Z Ecurs możesz skupić się na tym co chcesz przekazać.
-          </p>
+      {/* New Section: Stripe Connect & Payment Management */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+            {/* Text Content Column */}
+            <div className="mb-10 lg:mb-0">
+              <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6">
+                Otrzymuj płatności bezpośrednio na swoje konto
+              </h2>
+              <div className="space-y-4 text-lg text-gray-600">
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">💳</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Stripe Connect</p>
+                    <p>Bezpieczne płatności z automatycznym rozliczaniem prowizji</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">📊</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Rozliczenia z uczniami</p>
+                    <p>Przejrzyste raporty finansowe i automatyczne faktury</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">🔄</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Elastyczne modele płatności</p>
+                    <p>Subskrypcje, płatności jednorazowe i okresy próbne</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Image/Visual Column */}
+            <div className="flex justify-center">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 shadow-xl">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">💰</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Twoje przychody</h3>
+                  <div className="bg-white rounded-lg p-6 shadow-lg">
+                    <div className="text-3xl font-bold text-green-600 mb-2">+2,450 zł</div>
+                    <div className="text-sm text-gray-600">w tym miesiącu</div>
+                    <div className="mt-4 h-2 bg-gray-200 rounded-full">
+                      <div className="h-2 bg-gradient-to-r from-green-400 to-green-600 rounded-full" style={{width: '75%'}}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* Section for AI Content Generation - Updated Layout */}
-      <section className="py-16 lg:py-24 bg-white"> {/* Increased padding */}
+      <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center"> {/* Use grid for layout */}
-            {/* Image Column (Left on large screens) */}
-            <div className="flex justify-center mb-10 lg:mb-0"> {/* Center image, add margin bottom for mobile */}
-              <img
-                src="/generate_content.gif"
-                alt="Generowanie treści AI w Ecurs"
-                className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
-              /* Consider adding width/height attributes for performance if known */
-              /* width={...} height={...} */
-              />
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+            {/* AI Mockup Column */}
+            <div className="flex justify-center mb-10 lg:mb-0">
+              <div className="bg-gradient-to-br from-purple-50 to-blue-100 rounded-2xl p-6 shadow-xl max-w-lg">
+                {/* AI Generator Interface */}
+                <div className="bg-white rounded-xl p-6 shadow-lg mb-4">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-white text-sm">🤖</span>
+                    </div>
+                    <span className="font-semibold text-gray-900">AI Generator Lekcji</span>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-xs text-gray-600 mb-1">Temat lekcji:</div>
+                      <div className="text-sm font-medium">Present Perfect Tense</div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-gray-50 rounded-lg p-2">
+                        <div className="text-xs text-gray-600">Poziom:</div>
+                        <div className="text-sm font-medium">B1</div>
+                      </div>
+                      <div className="bg-gray-50 rounded-lg p-2">
+                        <div className="text-xs text-gray-600">Czas:</div>
+                        <div className="text-sm font-medium">50 min</div>
+                      </div>
+                    </div>
+                    <div className="bg-purple-50 rounded-lg p-3 border-2 border-purple-200">
+                      <div className="text-xs text-purple-600 mb-2">✨ Wygenerowana lekcja:</div>
+                      <div className="text-sm text-gray-700 mb-2">
+                        <strong>1. Budowa Present Perfect</strong><br/>
+                        have/has + past participle (3rd form)
+                      </div>
+                      <div className="text-sm text-gray-700 mb-2">
+                        <strong>2. Przykłady:</strong><br/>
+                        <em>"I have lived here for 5 years"</em>
+                      </div>
+                      <div className="flex items-center text-xs text-purple-600">
+                        <span className="mr-2">⚡</span>
+                        <span>Automatycznie dodano ćwiczenia i quiz</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* AI Checker Interface */}
+                <div className="bg-white rounded-xl p-6 shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-white text-sm">✓</span>
+                    </div>
+                    <span className="font-semibold text-gray-900">AI Sprawdzanie Zadań</span>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-400">
+                      <div className="text-xs text-green-600 mb-1">Zadanie: Utwórz zdanie w Present Perfect</div>
+                      <div className="text-sm text-gray-700">
+                        <strong>Odpowiedź ucznia:</strong><br/>
+                        <em>"I have been to London three times."</em>
+                      </div>
+                      <div className="mt-2 flex items-center">
+                        <span className="text-green-600 font-bold mr-2">90/100</span>
+                        <span className="text-xs text-green-600">✅ Bardzo dobrze!</span>
+                      </div>
+                    </div>
+                    <div className="bg-yellow-50 rounded-lg p-3 border-l-4 border-yellow-400">
+                      <div className="text-xs text-yellow-600 mb-1">Automatyczna ocena + feedback:</div>
+                      <div className="text-sm text-gray-700">
+                        "Świetnie! Poprawna budowa i znaczenie. Spróbuj dodać więcej szczegółów."
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* Text Content Column (Right on large screens) */}
+            {/* Text Content Column */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"> {/* Adjusted text size and alignment */}
-                Użyj wsparcia sztucznej inteligencji
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left">
+                AI automatyzuje tworzenie i ocenianie
               </h2>
-              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left"> {/* Adjusted text color and alignment */}
-                Wykorzystaj moc AI do szybkiego tworzenia interesujących materiałów edukacyjnych i wspierania ucznia w nauce, oszczędzając swój czas.
+              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
+                Sztuczna inteligencja pomaga w tworzeniu kompletnych lekcji z zadaniami oraz automatycznie sprawdza i ocenia prace uczniów, oszczędzając Twój czas.
               </p>
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-purple-50 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <span className="text-purple-600 mr-2">🚀</span>
+                    <span className="font-semibold text-purple-900">Generator lekcji</span>
+                  </div>
+                  <p className="text-sm text-purple-700">Tworzy pełne lekcje z teorią, przykładami i zadaniami</p>
+                </div>
+                <div className="bg-green-50 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <span className="text-green-600 mr-2">✅</span>
+                    <span className="font-semibold text-green-900">Auto-sprawdzanie</span>
+                  </div>
+                  <p className="text-sm text-green-700">Ocenia zadania i daje spersonalizowany feedback</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* New Section for Interactive Content */}
-      <section className="py-16 lg:py-24 bg-gray-50"> {/* Increased padding */}
+      <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center"> {/* Use grid for layout */}
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Text Content Column */}
-            <div className="mb-10 lg:mb-0"> {/* Add margin bottom for mobile */}
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"> {/* Adjusted text size and alignment */}
+            <div className="mb-10 lg:mb-0">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left">
                 Twórz interaktywne treści
               </h2>
-              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left"> {/* Adjusted text color and alignment */}
+              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
                 Angażuj uczniów za pomocą różnorodnych interaktywnych elementów, takich jak quizy, zadania typu "dopasuj elementy", fiszki i wiele innych, aby nauka była ciekawsza.
               </p>
             </div>
-            {/* Image Column */}
-            <div className="flex justify-center"> {/* Center image within its column */}
-              <img
-                src="/interactive_content.gif"
-                alt="Tworzenie interaktywnych treści w Ecurs"
-                className="rounded-lg shadow-xl max-w-full h-auto" /* Enhanced shadow, ensure responsiveness */
-              /* Consider adding width/height attributes for performance if known */
-              /* width={...} height={...} */
-              />
+            {/* Interactive Elements Mockup */}
+            <div className="flex justify-center">
+              <div className="bg-gradient-to-br from-green-50 to-teal-100 rounded-2xl p-8 shadow-xl max-w-md">
+                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Interaktywne elementy</h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-blue-400">
+                    <div className="flex items-center">
+                      <span className="text-2xl mr-3">❓</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Quiz</div>
+                        <div className="text-sm text-gray-600">Pytanie wielokrotnego wyboru</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-green-400">
+                    <div className="flex items-center">
+                      <span className="text-2xl mr-3">🎯</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Dopasuj elementy</div>
+                        <div className="text-sm text-gray-600">Interaktywne zadanie</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-purple-400">
+                    <div className="flex items-center">
+                      <span className="text-2xl mr-3">🃏</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Fiszki</div>
+                        <div className="text-sm text-gray-600">Nauka przez powtarzanie</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-orange-400">
+                    <div className="flex items-center">
+                      <span className="text-2xl mr-3">📝</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Zadania otwarte</div>
+                        <div className="text-sm text-gray-600">Odpowiedzi tekstowe</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/* New Section: Zarządzanie kursami i uczniami + Analityka */}
-      <section className="py-16 bg-gray-50">
+      {/* New Section: Advanced Analytics & Notifications */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Image Column */}
             <div className="flex justify-center mb-10 lg:mb-0">
-              <img
-                src="/course_management.gif"
-                alt="Zarządzanie kursami i uczniami oraz analityka Ecurs"
-                className="rounded-lg shadow-xl max-w-full h-auto"
-              />
+              <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md">
+                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Panel analityczny</h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm text-gray-600">Ukończenia kursów</span>
+                    <span className="font-bold text-green-600">87%</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm text-gray-600">Aktywni uczniowie</span>
+                    <span className="font-bold text-blue-600">142</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm text-gray-600">Przychód miesięczny</span>
+                    <span className="font-bold text-orange-600">3,250 zł</span>
+                  </div>
+                  <div className="mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200">
+                    <div className="flex items-center">
+                      <span className="text-orange-600 mr-2">🔔</span>
+                      <span className="text-sm text-orange-800">Nowy uczeń dołączył do kursu "React dla początkujących"</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* Text Content Column */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left">
-                Zarządzaj swoimi kursami i uczniami
+              <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6">
+                Analityki i powiadomienia w czasie rzeczywistym
               </h2>
-              <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
-                Dajemy Ci pełną kontrolę nad Twoimi kursami – zarządzaj swoją grupą i materiałami.
-                Dzięki modułowi analityki możesz śledzić swoją skuteczność, a więc i podejmować lepsze decyzje na podstawie realnych danych.
-              </p>
+              <div className="space-y-4 text-lg text-gray-600">
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">📈</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Zaawansowane analityki</p>
+                    <p>Śledź postępy uczniów, popularność materiałów i przychody w czasie rzeczywistym</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">🔔</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Inteligentne powiadomienia</p>
+                    <p>Otrzymuj alerty o nowych zapisach, ukończeniach i problemach wymagających uwagi</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">📋</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Raporty skuteczności</p>
+                    <p>Analizuj które materiały są najbardziej angażujące i gdzie uczniowie napotykają trudności</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-white pt-16"> {/* Changed background back to white */}
+      {/* New Section: Educational Paths & Marketplace */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Cennik</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Buduj kompleksowe doświadczenia edukacyjne</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Twórz powiązane ścieżki nauczania i sprzedawaj swoje kursy w globalnym marketplace
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Educational Paths */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl text-white">🎯</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Ścieżki edukacyjne</h3>
+                <p className="text-gray-700">Twórz strukturalne programy nauczania</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">1</div>
+                    <span className="font-semibold">Podstawy fotografii</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">2</div>
+                    <span className="font-semibold">Kompozycja i kadrowanie</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">3</div>
+                    <span className="font-semibold">Obróbka zdjęć w Lightroom</span>
+                  </div>
+                </div>
+                <div className="text-center pt-4">
+                  <span className="text-sm text-gray-600">Łącz kursy w logiczne sekwencje</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Marketplace */}
+            <div className="bg-gradient-to-br from-orange-50 to-yellow-100 rounded-2xl p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl text-white">🛒</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Marketplace kursów</h3>
+                <p className="text-gray-700">Sprzedawaj w globalnej platformie</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold">Twój kurs widoczny globalnie</span>
+                    <span className="text-green-600 font-bold">+250%</span>
+                  </div>
+                  <div className="text-sm text-gray-600">wzrost zasięgu</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold">Automatyczne płatności</span>
+                    <span className="text-blue-600 font-bold">24/7</span>
+                  </div>
+                  <div className="text-sm text-gray-600">bez Twojej interwencji</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold">Prowizja platformy</span>
+                    <span className="text-green-600 font-bold">0% zawsze!</span>
+                  </div>
+                  <div className="text-sm text-gray-600">100% przychodów dla Ciebie</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-4">Wybierz plan idealny dla Ciebie</h2>
+          <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+            Wszystkie plany obejmują pełny dostęp do nowych funkcjonalności. Rozpocznij za darmo!
+          </p>
           <PricingSection />
         </div>
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Dlaczego warto wybrać Ecurs?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">Dlaczego warto wybrać Ecurs?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Twórz i zarabiaj na kursach</h3>
-              <p className="text-gray-700">Jako autor możesz nie tylko tworzyć kursy, ale także sprzedawać je lub udostępniać za darmo. Zbuduj własną markę edukacyjną i docieraj do nowych odbiorców.</p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Ścieżki edukacyjne</h3>
+              <p className="text-gray-700">Twórz kompleksowe programy nauczania łączące wiele kursów w logiczną sekwencję. Prowadź uczniów krok po kroku do celu.</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Marketplace kursów</h3>
-              <p className="text-gray-700">Twoje kursy mogą trafić do marketplace, gdzie inni użytkownicy mogą je zobaczyć and dołączyć do Twojego kursu. Zwiększ swoją widoczność i zyskaj nowych klientów.</p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Kursy na bieżąco</h3>
+              <p className="text-gray-700">Dodawaj nowe materiały w trakcie trwania kursu, dostosowując się do tempa i potrzeb uczniów. Bądź elastyczny w nauczaniu.</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Pełna kontrola i zarządzanie</h3>
-              <p className="text-gray-700">Zarządzaj swoimi kursami, uczniami i materiałami w jednym intuicyjnym panelu. Wszystko, czego potrzebujesz, masz pod ręką.</p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Elastyczne modele sprzedaży</h3>
+              <p className="text-gray-700">Oferuj subskrypcje miesięczne/roczne, okresy próbne lub sprzedawaj materiały jednorazowo. Dostosuj model do swoich potrzeb.</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Wygodne płatności</h3>
-              <p className="text-gray-700">Obsługujemy szybkie przelewy, BLIK oraz płatności kartą. Twoi klienci zapłacą tak, jak im wygodnie, a Ty szybko otrzymasz środki.</p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">💳</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Stripe Connect</h3>
+              <p className="text-gray-700">Otrzymuj płatności bezpośrednio na swoje konto. Obsługujemy przelewy, BLIK i karty płatnicze z automatycznym rozliczaniem prowizji.</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Zaawansowana analityka</h3>
-              <p className="text-gray-700">Korzystaj z rozbudowanego modułu analityk – śledź postępy uczniów i efektywność swoich kursów, podejmuj lepsze decyzje.</p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">📊</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Zaawansowane analityki</h3>
+              <p className="text-gray-700">Śledź postępy uczniów, przychody i skuteczność materiałów w czasie rzeczywistym. Podejmuj decyzje oparte na danych.</p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">Postępy uczniów i nauczycieli</h3>
-              <p className="text-gray-700">
-                Uczniowie i nauczyciele mogą na bieżąco śledzić swoje postępy, wyniki i aktywność na platformie, co motywuje do dalszego rozwoju.
-                Po ukończeniu kursu uczniowie otrzymują certyfikat ukończenia.
-                
-              </p>
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🔔</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart powiadomienia</h3>
+              <p className="text-gray-700">Automatyczne powiadomienia o postępach, nowych zapisach, terminach i problemach wymagających uwagi. Bądź zawsze na bieżąco.</p>
             </div>
           </div>
         </div>
