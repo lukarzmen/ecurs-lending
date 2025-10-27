@@ -233,79 +233,13 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-            {/* AI Mockup Column */}
+            {/* AI Demo GIF */}
             <div className="flex justify-center mb-10 lg:mb-0">
-              <div className="bg-gradient-to-br from-purple-50 to-blue-100 rounded-2xl p-6 shadow-xl max-w-lg">
-                {/* AI Generator Interface */}
-                <div className="bg-white rounded-xl p-6 shadow-lg mb-4">
-                  <div className="flex items-center mb-4">
-                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-white text-sm">🤖</span>
-                    </div>
-                    <span className="font-semibold text-gray-900">AI Generator Lekcji</span>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="text-xs text-gray-600 mb-1">Temat lekcji:</div>
-                      <div className="text-sm font-medium">Present Perfect Tense</div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-gray-50 rounded-lg p-2">
-                        <div className="text-xs text-gray-600">Poziom:</div>
-                        <div className="text-sm font-medium">B1</div>
-                      </div>
-                      <div className="bg-gray-50 rounded-lg p-2">
-                        <div className="text-xs text-gray-600">Czas:</div>
-                        <div className="text-sm font-medium">50 min</div>
-                      </div>
-                    </div>
-                    <div className="bg-purple-50 rounded-lg p-3 border-2 border-purple-200">
-                      <div className="text-xs text-purple-600 mb-2">✨ Wygenerowana lekcja:</div>
-                      <div className="text-sm text-gray-700 mb-2">
-                        <strong>1. Budowa Present Perfect</strong><br/>
-                        have/has + past participle (3rd form)
-                      </div>
-                      <div className="text-sm text-gray-700 mb-2">
-                        <strong>2. Przykłady:</strong><br/>
-                        <em>"I have lived here for 5 years"</em>
-                      </div>
-                      <div className="flex items-center text-xs text-purple-600">
-                        <span className="mr-2">⚡</span>
-                        <span>Automatycznie dodano ćwiczenia i quiz</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* AI Checker Interface */}
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="flex items-center mb-4">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="font-semibold text-gray-900">AI Sprawdzanie Zadań</span>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-400">
-                      <div className="text-xs text-green-600 mb-1">Zadanie: Utwórz zdanie w Present Perfect</div>
-                      <div className="text-sm text-gray-700">
-                        <strong>Odpowiedź ucznia:</strong><br/>
-                        <em>"I have been to London three times."</em>
-                      </div>
-                      <div className="mt-2 flex items-center">
-                        <span className="text-green-600 font-bold mr-2">90/100</span>
-                        <span className="text-xs text-green-600">✅ Bardzo dobrze!</span>
-                      </div>
-                    </div>
-                    <div className="bg-yellow-50 rounded-lg p-3 border-l-4 border-yellow-400">
-                      <div className="text-xs text-yellow-600 mb-1">Automatyczna ocena + feedback:</div>
-                      <div className="text-sm text-gray-700">
-                        "Świetnie! Poprawna budowa i znaczenie. Spróbuj dodać więcej szczegółów."
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/ai_demo.gif" 
+                alt="AI Generator Demo" 
+                className="rounded-2xl shadow-xl max-w-lg w-full h-auto" 
+              />
             </div>
             {/* Text Content Column */}
             <div>
@@ -400,31 +334,13 @@ export default function HomePage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-            {/* Image Column */}
+            {/* Analytics Demo GIF */}
             <div className="flex justify-center mb-10 lg:mb-0">
-              <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Panel analityczny</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                    <span className="text-sm text-gray-600">Ukończenia kursów</span>
-                    <span className="font-bold text-green-600">87%</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                    <span className="text-sm text-gray-600">Aktywni uczniowie</span>
-                    <span className="font-bold text-blue-600">142</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                    <span className="text-sm text-gray-600">Przychód miesięczny</span>
-                    <span className="font-bold text-orange-600">3,250 zł</span>
-                  </div>
-                  <div className="mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200">
-                    <div className="flex items-center">
-                      <span className="text-orange-600 mr-2">🔔</span>
-                      <span className="text-sm text-orange-800">Nowy uczeń dołączył do kursu "React dla początkujących"</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/analytics_demo.gif" 
+                alt="Analytics Demo" 
+                className="rounded-2xl shadow-xl max-w-md w-full h-auto" 
+              />
             </div>
             {/* Text Content Column */}
             <div>
