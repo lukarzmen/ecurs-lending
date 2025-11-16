@@ -244,12 +244,19 @@ export default function HomePage() {
             {/* Text Content Column */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left">
-                AI automatyzuje tworzenie i ocenianie
+                AI automatyzuje tworzenie kursów i lekcji
               </h2>
               <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
-                Sztuczna inteligencja pomaga w tworzeniu kompletnych lekcji z zadaniami oraz automatycznie sprawdza i ocenia prace uczniów, oszczędzając Twój czas.
+                Sztuczna inteligencja pomaga w tworzeniu kompletnych kursów, lekcji z zadaniami oraz automatycznie sprawdza i ocenia prace uczniów, oszczędzając Twój czas.
               </p>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-orange-50 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <span className="text-orange-600 mr-2">🎓</span>
+                    <span className="font-semibold text-orange-900">Generator kursów</span>
+                  </div>
+                  <p className="text-sm text-orange-700">Tworzy całe kursy z programem nauczania i materiałami</p>
+                </div>
                 <div className="bg-purple-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <span className="text-purple-600 mr-2">🚀</span>
@@ -257,10 +264,17 @@ export default function HomePage() {
                   </div>
                   <p className="text-sm text-purple-700">Tworzy pełne lekcje z teorią, przykładami i zadaniami</p>
                 </div>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <span className="text-blue-600 mr-2">📅</span>
+                    <span className="font-semibold text-blue-900">Auto publikacja</span>
+                  </div>
+                  <p className="text-sm text-blue-700">Planuj i automatycznie publikuj lekcje w określonych terminach</p>
+                </div>
                 <div className="bg-green-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <span className="text-green-600 mr-2">✅</span>
-                    <span className="font-semibold text-green-900">Auto-sprawdzanie</span>
+                    <span className="font-semibold text-green-900">Auto-ocenianie</span>
                   </div>
                   <p className="text-sm text-green-700">Ocenia zadania i daje spersonalizowany feedback</p>
                 </div>
