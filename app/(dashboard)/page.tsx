@@ -191,7 +191,7 @@ export default function HomePage() {
                   <span className="text-2xl mr-3">💳</span>
                   <div>
                     <p className="font-semibold text-gray-900">Stripe Connect</p>
-                    <p>Bezpieczne płatności z automatycznym rozliczaniem prowizji</p>
+                    <p>Bezpieczne płatności i pełna kontrola nad finansami</p>
                   </div>
                 </div>
                 <div className="flex items-start">
