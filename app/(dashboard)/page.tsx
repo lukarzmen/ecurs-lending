@@ -137,7 +137,7 @@ export default function HomePage() {
               Wszystko czego potrzebujesz do tworzenia, zarządzania i sprzedaży kursów online w jednym miejscu
             </p>
           </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎯</span>
@@ -172,6 +172,15 @@ export default function HomePage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Smart powiadomienia</h3>
               <p className="text-gray-600">
                 Automatyczne powiadomienia o postępach, terminach i nowych materiałach.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💬</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Komunikacja z uczniami</h3>
+              <p className="text-gray-600">
+                Wbudowana komunikacja przez platformę z wsparciem AI.
               </p>
             </div>
           </div>
