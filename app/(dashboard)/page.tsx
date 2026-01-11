@@ -91,6 +91,9 @@ export default function HomePage() {
                 <li>
                   <span className="font-semibold text-orange-500">📊 Zaawansowane analityki</span> – śledź postępy uczniów, przychody i skuteczność materiałów w czasie rzeczywistym.
                 </li>
+                <li>
+                  <span className="font-semibold text-orange-500">🖨️ Wydruki lekcji do PDF</span> – generuj czytelne materiały do druku dla nauczycieli i uczniów.
+                </li>
               </ul>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <Button asChild className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-full text-lg px-10 py-4 inline-flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
@@ -303,7 +306,7 @@ export default function HomePage() {
                 Twórz interaktywne treści
               </h2>
               <p className="mt-4 text-lg text-gray-600 text-center lg:text-left">
-                Angażuj uczniów za pomocą różnorodnych interaktywnych elementów, takich jak quizy, zadania typu "dopasuj elementy", fiszki i wiele innych, aby nauka była ciekawsza.
+                Angażuj uczniów za pomocą różnorodnych interaktywnych elementów, takich jak quizy, zadania typu "dopasuj elementy", fiszki i wiele innych — a gdy potrzebujesz, przygotuj też wydruk lekcji w PDF dla nauczycieli i uczniów.
               </p>
             </div>
             {/* Interactive Elements Mockup */}
