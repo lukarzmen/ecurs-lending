@@ -1,4 +1,6 @@
+import { Suspense } from 'react';
 import Link from 'next/link';
+import FooterYear from './__components/FooterYear';
 
 
 function Header() {
@@ -17,7 +19,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-gray-200 py-4 text-center text-gray-500">
-      © {new Date().getFullYear()} Ecurs. Wszelkie prawa zastrzeżone. <br />
+      © <Suspense fallback=""><FooterYear /></Suspense> Ecurs. Wszelkie prawa zastrzeżone. <br />
       <span className="text-xs">Łukasz Mędyk</span>
     </footer>
   );
