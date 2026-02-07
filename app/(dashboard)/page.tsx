@@ -97,7 +97,7 @@ export default function HomePage() {
               </ul>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <Button asChild className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-full text-lg px-10 py-4 inline-flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                  <a href="https://platforma.ecurs.pl/">
+                  <a href="https://ecurs.pl/">
                     Zacznij za darmo już dziś
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>

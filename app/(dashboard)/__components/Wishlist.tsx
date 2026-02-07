@@ -15,7 +15,7 @@ export default function WishlistComponent() {
     const contact = formData.get('phone'); // Updated to match the API's "contact" field
 
     try {
-      const response = await fetch('https://platforma.ecurs.pl/api/wishlist', {
+      const response = await fetch('https://ecurs.pl/api/wishlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
