@@ -5,8 +5,8 @@ export default function PricingSection() {
     {
       name: 'Wypróbuj platformę',
       price: '0 zł',
-      pricingPeriod: 'za 3 miesiące',
-      description: 'Przetestuj wszystkie funkcje platformy Ecurs bez opłat przez pełne 3 miesiące.',
+      pricingPeriod: 'za 90 dni',
+      description: 'Przetestuj wszystkie funkcje platformy Ecurs bez opłat przez pełne 90 dni.',
       features: [
         'Pełny dostęp do wszystkich funkcji',
         'Tworzenie ścieżek edukacyjnych',
@@ -18,10 +18,11 @@ export default function PricingSection() {
       ],
     },
     {
-      name: 'Dla indywidualnych twórców',
-      price: '39 zł',
+      name: 'Plan indywidualny / nauczyciela',
+      price: '19 zł',
+      oldPrice: '29 zł',
       pricingPeriod: 'za miesiąc',
-      description: 'Idealne rozwiązanie dla freelancerów i małych edukatorów.',
+      description: 'Idealne rozwiązanie dla indywidualnych edukatorów i nauczycieli.',
       features: [
         'Pełny dostęp do wszystkich funkcji',
         'Tworzenie ścieżek edukacyjnych',
@@ -29,21 +30,23 @@ export default function PricingSection() {
         'Zaawansowane analityki',
         'Powiadomienia w czasie rzeczywistym',
         'Dostęp z dowolnego urządzenia',
+        'Do 100 uczniów',
         'Wsparcie techniczne',
       ],
     },
     {
-      name: 'Dla szkół i dużych twórców',
-      price: '1799 zł',
+      name: 'Plan dla szkół',
+      price: '1199 zł',
+      oldPrice: '1499 zł',
       pricingPeriod: 'za rok',
-      description: 'Kompletne rozwiązanie dla instytucji edukacyjnych i dużych organizacji.',
+      description: 'Kompletne rozwiązanie dla szkół i instytucji edukacyjnych.',
       features: [
         'Wszystko z poprzednich planów',
         'Bez ograniczeń liczby uczniów',
         'Zarządzanie zespołem nauczycieli',
         'Priorytetowe wsparcie techniczne',
       ],
-    }
+    },
   ];
 
   // Calculate max features count for all plans
@@ -51,13 +54,13 @@ export default function PricingSection() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Promo Banner: 3 miesiące za darmo */}
+      {/* Promo Banner: 90 dni za darmo */}
       <div className="mb-12">
         <div className="bg-gradient-to-r from-orange-100 to-yellow-100 border-2 border-orange-300 rounded-xl px-8 py-6 text-center shadow-lg">
           <div className="flex items-center justify-center mb-2">
             <span className="text-3xl mr-3">🎉</span>
             <span className="text-2xl font-bold text-orange-800">
-              Promocja: 3 miesiące za darmo!
+              Promocja: 90 dni za darmo!
             </span>
             <span className="text-3xl ml-3">🚀</span>
           </div>
@@ -84,6 +87,7 @@ export default function PricingSection() {
             description={plan.description}
             features={plan.features}
             maxFeatures={maxFeatures}
+            oldPrice={plan.oldPrice}
           />
         ))}
       </div>
@@ -98,6 +102,7 @@ function PricingCard({
   pricingPeriod,
   features,
   maxFeatures,
+  oldPrice,
 }: {
   name: string;
   price: string;
@@ -105,16 +110,10 @@ function PricingCard({
   description: string;
   features: string[];
   maxFeatures: number;
+  oldPrice?: string;
 }) {
   const isFree = price === '0 zł';
-  let oldPrice = price;
-  let newPrice = price;
-
-  if (!isFree) {
-    const numeric = parseFloat(price.replace(/[^\d.]/g, ''));
-    const promo = Math.round(numeric * 0.8 * 100) / 100;
-    newPrice = `${promo} zł`;
-  }
+  const hasPromo = !!oldPrice && !isFree;
 
   // Pad features for alignment
   const paddedFeatures = [
@@ -142,16 +141,20 @@ function PricingCard({
             ) : (
               <div className="text-center">
                 <div className="flex flex-col items-center">
-                  <span className="text-2xl text-gray-400 line-through mb-1">
-                    {oldPrice}
-                  </span>
+                  {hasPromo && (
+                    <span className="text-2xl text-gray-400 line-through mb-1">
+                      {oldPrice}
+                    </span>
+                  )}
                   <span className="text-5xl font-bold text-orange-600 mb-2">
-                    {newPrice}
+                    {price}
                   </span>
                   <span className="text-lg text-gray-600">{pricingPeriod}</span>
-                  <span className="text-sm text-orange-500 font-semibold mt-2 bg-orange-50 px-3 py-1 rounded-full">
-                    -20% zniżki
-                  </span>
+                  {hasPromo && (
+                    <span className="text-sm text-orange-500 font-semibold mt-2 bg-orange-50 px-3 py-1 rounded-full">
+                      Promocja
+                    </span>
+                  )}
                 </div>
               </div>
             )}
