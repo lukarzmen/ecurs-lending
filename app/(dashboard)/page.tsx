@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail } from 'lucide-react';
 import PricingSection from './__components/PricingSection';
+import TeacherDemo from './__components/TeacherDemo';
+import DeferredGif from './__components/DeferredGif';
 
 export const metadata = {
   title: "Ecurs – nowoczesna platforma edukacyjna z AI. Ścieżki edukacyjne, analityki i Stripe Connect.",
@@ -111,22 +113,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-end">
-              <div className="relative lg:ml-16 max-w-lg">
-                <div className="bg-orange-50 rounded-lg px-3 py-1 inline-block mb-4">
-                  <span className="text-sm font-medium text-orange-700">🎬 Demo na żywo</span>
-                </div>
-                <img
-                  src="/app_demo.gif"
-                  alt="Demo aplikacji Ecurs - zobacz jak działa platforma"
-                  className="rounded-2xl shadow-2xl w-full h-auto"
-                />
-                {/* Optional overlay with play button for video-like appearance */}
-                <div className="absolute inset-0 bg-black/10 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-orange-600 text-2xl ml-1">▶</span>
-                  </div>
-                </div>
-              </div>
+              <TeacherDemo />
             </div>
           </div>
         </div>
@@ -210,7 +197,7 @@ export default function HomePage() {
                   <span className="text-2xl mr-3">📊</span>
                   <div>
                     <p className="font-semibold text-gray-900">Rozliczenia z uczniami</p>
-                    <p>Przejrzyste raporty finansowe i automatyczne faktury</p>
+                    <p>Przejrzyste raporty finansowe i faktury w Stripe</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -247,10 +234,12 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* AI Demo GIF */}
             <div className="flex justify-center mb-10 lg:mb-0">
-              <img 
-                src="/ai_demo.gif" 
-                alt="AI Generator Demo" 
-                className="rounded-2xl shadow-xl max-w-lg w-full h-auto" 
+              <DeferredGif
+                src="/ai_demo.gif"
+                alt="AI Generator Demo"
+                title="Demo generatora AI"
+                description="Uruchom podgląd działania generatora kursów i lekcji opartych o AI."
+                className="rounded-2xl shadow-xl max-w-lg w-full h-auto"
               />
             </div>
             {/* Text Content Column */}
@@ -362,10 +351,12 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Analytics Demo GIF */}
             <div className="flex justify-center mb-10 lg:mb-0">
-              <img 
-                src="/analytics_demo.gif" 
-                alt="Analytics Demo" 
-                className="rounded-2xl shadow-xl max-w-md w-full h-auto" 
+              <DeferredGif
+                src="/analytics_demo.gif"
+                alt="Analytics Demo"
+                title="Demo analityk i powiadomień"
+                description="Uruchom animację panelu analitycznego oraz inteligentnych powiadomień."
+                className="rounded-2xl shadow-xl max-w-md w-full h-auto"
               />
             </div>
             {/* Text Content Column */}
@@ -639,26 +630,6 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart powiadomienia</h3>
               <p className="text-gray-700">Automatyczne powiadomienia o postępach, nowych zapisach, terminach i problemach wymagających uwagi. Bądź zawsze na bieżąco.</p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Zobacz, co dla edukatorów oferuje platforma Ecurs
-          </h2>
-          <p className="mb-8 text-lg text-gray-600">
-            Jak zarejestrować się i stworzyć swoją pierwszą lekcję? Obejrzyj krótki film instruktażowy.
-          </p>
-          <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg" style={{ aspectRatio: '16/9' }}>
-            <iframe
-              src="https://www.youtube.com/embed/E50cc-3huk4?si=k9gIB9PKbBieh7n9"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full"
-            ></iframe>
           </div>
         </div>
       </section>
