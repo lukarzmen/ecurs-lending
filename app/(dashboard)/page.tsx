@@ -285,6 +285,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-50 to-white border-t border-orange-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Zobacz jak powstaje kurs od początku</h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+              Kliknij podgląd, aby otworzyć demo w większym widoku. Materiał pokazuje cały proces tworzenia kursu krok po kroku: od pomysłu, przez strukturę lekcji, aż po publikację.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <DeferredGif
+              src="/teacher_demo.gif"
+              alt="Demo tworzenia kursu od początku"
+              title="Demo: tworzenie kursu od zera"
+              description="Kliknij, aby otworzyć GIF w większym widoku jak wideo."
+              className="rounded-2xl shadow-2xl w-full h-auto"
+              openOnClick
+            />
+          </div>
+        </div>
+      </section>
+
       {/* New Section for Interactive Content */}
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
