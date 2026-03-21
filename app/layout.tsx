@@ -27,6 +27,8 @@ export default function RootLayout({
       className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
     >
       <head>
+        <meta name="msvalidate.01" content="242A3760F9418E55873256075DECDC28" />
+        <meta property="fb:app_id" content="580840648168709" />
         <Script
           dangerouslySetInnerHTML={{
             __html: `
@@ -38,16 +40,22 @@ export default function RootLayout({
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '1295563135637874');
+              fbq('init', '1563936648199144');
               fbq('track', 'PageView');
             `,
           }}
         />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <meta name="msvalidate.01" content="242A3760F9418E55873256075DECDC28" />
-      <meta property="fb:app_id" content="580840648168709" />
       <body className="min-h-[100dvh] bg-gray-50">
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            alt=""
+            src="https://www.facebook.com/tr?id=1563936648199144&ev=PageView&noscript=1"
+          />
+        </noscript>
         <ToastProvider />
         {children}
       </body>

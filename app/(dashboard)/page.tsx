@@ -5,21 +5,38 @@ import TeacherDemo from './__components/TeacherDemo';
 import DeferredGif from './__components/DeferredGif';
 
 export const metadata = {
-  title: "Ecurs – nowoczesna platforma edukacyjna z AI. Ścieżki edukacyjne, analityki i Stripe Connect.",
-  description: "Twórz ścieżki edukacyjne, kursy na bieżąco, sprzedawaj w subskrypcjach. Zaawansowane analityki, powiadomienia i płatności przez Stripe Connect. 3 miesiące za darmo!",
+  title: 'Oferta dla nauczycieli | Ecurs',
+  description:
+    'Ecurs - tworzysz kursy i ścieżki nauki, udostępniasz materiały uczniom i rozwijasz edukację online bez barier technicznych.',
+  keywords: [
+    'platforma dla nauczycieli',
+    'kursy online dla nauczycieli',
+    'tworzenie kursów online',
+    'narzędzia dla nauczycieli',
+    'ecurs',
+  ],
   openGraph: {
-    title: 'Ecurs - przyszłość edukacji online',
-    description: 'Ścieżki edukacyjne, kursy na bieżąco, analityki AI i Stripe Connect. Zacznij tworzyć już dziś - 3 miesiące za darmo!',
+    title: 'Ecurs - twórz nowoczesne kursy online',
+    description:
+      'Oferta Ecurs dla nauczycieli: lekcje, materiały, ścieżki nauki i wygodna sprzedaż kursów w jednym miejscu.',
     url: 'https://uczzecurs.pl/',
     type: 'website',
+    locale: 'pl_PL',
     images: [
       {
-        url: 'https://uczzecurs.pl/demo3.png',
+        url: 'https://uczzecurs.pl/demo4.png',
         width: 1200,
         height: 630,
-        alt: 'Ecurs - nowoczesna platforma edukacyjna 2025',
+        alt: 'Ecurs - oferta platformy edukacyjnej dla nauczycieli',
       },
-    ]
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Oferta dla nauczycieli | Ecurs',
+    description:
+      'Twórz i rozwijaj kursy online dla swoich uczniów. Poznaj ofertę Ecurs dla nauczycieli.',
+    images: ['https://uczzecurs.pl/demo4.png'],
   },
 };
 

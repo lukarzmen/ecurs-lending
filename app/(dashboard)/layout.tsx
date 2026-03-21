@@ -1,7 +1,46 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import FooterYear from './__components/FooterYear';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://uczzecurs.pl'),
+  title: "Ecurs - nowoczesna edukacja",
+  description: "Ecurs to innowacyjna platforma edukacyjna, która oferuje tworzenie i uczestnictwo w interaktywnych kursach wspieranych przez sztuczną inteligencję.",
+  openGraph: {
+    title: 'Ecurs - nowoczesna edukacja',
+    description: 'Zacznij tworzyć interaktywne kursy online z Ecurs. Platforma wspierana przez AI.',
+    url: 'https://uczzecurs.pl/',
+    siteName: 'Ecurs',
+    type: 'website',
+    locale: 'pl_PL',
+    images: [
+      {
+        url: '/demo4.png',
+        width: 1200,
+        height: 630,
+        alt: 'Ecurs - nowoczesna edukacja',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ecurs - nowoczesna edukacja',
+    description: 'Zacznij tworzyć interaktywne kursy online z Ecurs. Platforma wspierana przez AI.',
+    images: ['/demo4.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
 
 function Header() {
   return (
